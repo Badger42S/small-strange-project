@@ -6,8 +6,8 @@ import org.springframework.stereotype.Service;
 public class SomeServiceImpl implements SomeService{
     private final ChuckNorrisQuotes chuckQuotes;
 
-    public SomeServiceImpl() {
-        this.chuckQuotes = new ChuckNorrisQuotes();
+    public SomeServiceImpl(ChuckNorrisQuotes chuckQuotes) {
+        this.chuckQuotes = chuckQuotes;
     }
 
     @Override
